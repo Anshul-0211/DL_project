@@ -16,6 +16,16 @@ class DeformationPrior:
         # mean: (V, 3) float32
         # components: (k, V*3) float32 — rows are principal axes (unit vectors)
         # singular_values: (k,) float32
+        if mean.ndim != 2 or mean.shape[1] != 3:
+            raise ValueError(f"Prior mean must have shape (V, 3), got {mean.shape}")
+        if components.ndim != 2 or components.shape[1] != mean.shape[0] * 3:
+            raise ValueError(
+                f"Prior components must have shape (k, {mean.shape[0] * 3}) to match the mean, got {components.shape}"
+            )
+        if singular_values.shape != (components.shape[0],):
+            raise ValueError(
+                f"Expected {components.shape[0]} singular values (one per component), got shape {singular_values.shape}"
+            )
         self.mean = mean.astype(np.float32)
         self.components = components.astype(np.float32)
         self.singular_values = singular_values.astype(np.float32)
@@ -33,6 +43,11 @@ class DeformationPrior:
         vertices: (V, 3)
         returns: (V, 3) float64
         """
+        if vertices.shape != (self.vertex_count, 3):
+            raise ValueError(
+                f"Cannot project vertices of shape {vertices.shape}; this prior expects ({self.vertex_count}, 3). "
+                "Make sure the mesh uses the same template topology the prior was built from."
+            )
         x_flat = vertices.reshape(-1).astype(np.float64)
         delta = x_flat - self._mean_flat                         # (V*3,)
         coeffs = self._components_f64 @ delta                   # (k,)
@@ -93,7 +108,14 @@ class DeformationPrior:
             targets.append(v)
 
         vertex_count = targets[0].shape[0]
+        for f, t in zip(target_files, targets):
+            if t.shape != (vertex_count, 3):
+                raise ValueError(
+                    f"{f} has shape {t.shape}, expected ({vertex_count}, 3); all targets must share one topology"
+                )
         n = len(targets)
+        if n < 2:
+            raise ValueError(f"Need at least 2 target meshes to build a PCA prior, found {n} under {pairs_dir}")
         print(f"[build-prior] {n} target meshes, {vertex_count} vertices each")
 
         D = np.stack([t.reshape(-1) for t in targets], axis=0)   # (N, V*3)
