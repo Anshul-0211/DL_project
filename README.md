@@ -78,6 +78,9 @@ python scripts/run_prior_guided_completion.py --prior outputs/famos_deformation_
 
 # Plot per-mode / cumulative explained variance of the learned prior (reads prior_summary.json; no dataset needed)
 python scripts/plot_prior_explained_variance.py
+
+# Pair-by-pair comparison of two eval reports on the same pairs (default: PointNet v2 vs GNN v3 showcase evals)
+python scripts/compare_eval_reports.py --out outputs/compare_v2_v3
 ```
 
 See **[DATASET_ACCESS.md](DATASET_ACCESS.md)** for dataset commands and the synthetic
