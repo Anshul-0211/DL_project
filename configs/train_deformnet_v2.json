@@ -1,0 +1,12 @@
+{
+  "pairs": "outputs/famos_flame_subset_pairs/pairs_manifest.jsonl",
+  "out": "outputs/train_deformnet_v2",
+  "epochs": 20,
+  "batch_size": 2,
+  "lr": 0.001,
+  "device": "cuda",
+  "latent_dim": 96,
+  "hidden_dim": 128,
+  "model_version": 2,
+  "max_pairs": 1000
+}
