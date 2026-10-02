@@ -1,0 +1,12 @@
+{
+  "pairs": "outputs/pairs_synthetic/pairs_manifest.jsonl",
+  "out": "outputs/train_deformnet",
+  "epochs": 10,
+  "batch_size": 2,
+  "lr": 0.001,
+  "device": "cuda",
+  "latent_dim": 96,
+  "hidden_dim": 128,
+  "max_pairs": null
+}
+

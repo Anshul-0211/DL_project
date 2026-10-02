@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Outputs: ignore everything except the curated proof folders committed for review.
+outputs/*
+!outputs/facescape_clean_topology_case/
+!outputs/famos_deformation_prior/
+!outputs/famos_flame_subset_eval/
+!outputs/famos_flame_subset_manifest/
+!outputs/famos_flame_subset_train/
+!outputs/famos_prior_guided_completion/
+
+# License-gated datasets are never committed (download locally after license approval).
+data/
+datasets/
+*.7z
+*.zip
+*.zip.*
+*.log
+.DS_Store
+Thumbs.db
+~$*

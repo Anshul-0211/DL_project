@@ -1,0 +1,19 @@
+{
+  "quality": "best",
+  "save_ablation": true,
+  "strict_flame": false,
+  "semantic_icp": {
+    "visibility_weighting": true,
+    "bidirectional_check": true,
+    "point_to_plane_ratio": 0.55,
+    "feature_anchor_weight": 1.0
+  },
+  "texture": {
+    "texture_size": 768,
+    "detail_strength": 0.5,
+    "max_detail_distance": 0.1,
+    "symmetric_photo_fill": true,
+    "save_detail_residual": true
+  }
+}
+

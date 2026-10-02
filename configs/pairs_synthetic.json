@@ -1,0 +1,9 @@
+{
+  "manifest": null,
+  "out": "outputs/pairs_synthetic",
+  "teacher": "wrap++",
+  "point_count": 1024,
+  "synthetic_count": 16,
+  "seed": 17
+}
+

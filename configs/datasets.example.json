@@ -1,0 +1,23 @@
+{
+  "notes": "Restricted datasets must be downloaded manually under their own licenses. These are example local roots only.",
+  "datasets": [
+    {
+      "name": "famos",
+      "root": "D:/datasets/FaMoS",
+      "target_root": null,
+      "out": "outputs/datasets/famos"
+    },
+    {
+      "name": "d3dfacs",
+      "root": "D:/datasets/D3DFACS_FLAME_registrations",
+      "target_root": null,
+      "out": "outputs/datasets/d3dfacs"
+    },
+    {
+      "name": "hifi3dface",
+      "root": "D:/datasets/HiFi3DFace",
+      "target_root": null,
+      "out": "outputs/datasets/hifi3dface"
+    }
+  ]
+}
