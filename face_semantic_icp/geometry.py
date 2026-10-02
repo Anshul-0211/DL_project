@@ -52,6 +52,11 @@ def ensure_float_colors(colors: Optional[np.ndarray]) -> Optional[np.ndarray]:
 
 
 def normalize_mesh(mesh: Mesh, target_extent: float = 2.0) -> Mesh:
+    """Centre and uniformly scale a mesh so its longest axis spans ``target_extent``.
+
+    Used to put source and template meshes into a common coordinate frame
+    before ICP / DeformNet inference.
+    """
     mn, mx = mesh.bounds()
     center = (mn + mx) * 0.5
     extent = float(np.max(mx - mn))
@@ -61,7 +66,39 @@ def normalize_mesh(mesh: Mesh, target_extent: float = 2.0) -> Mesh:
     return mesh.copy(vertices=vertices)
 
 
+def mesh_summary(mesh: Mesh) -> dict:
+    """Return a human-readable summary dict for quick inspection of a mesh.
+
+    Includes vertex/face counts, bounding-box extents, whether optional
+    attributes (colors, uvs, semantics) are present, and approximate
+    surface area computed from face areas.
+
+    Example::
+
+        >>> summary = mesh_summary(my_mesh)
+        >>> print(summary["vertex_count"], summary["approx_surface_area"])
+    """
+    mn, mx = mesh.bounds()
+    v = mesh.vertices
+    f = mesh.faces
+    cross = np.cross(v[f[:, 1]] - v[f[:, 0]], v[f[:, 2]] - v[f[:, 0]])
+    area = float(0.5 * np.linalg.norm(cross, axis=1).sum())
+    return {
+        "name": mesh.name,
+        "vertex_count": mesh.vertex_count,
+        "face_count": mesh.face_count,
+        "bbox_min": mn.tolist(),
+        "bbox_max": mx.tolist(),
+        "extents_xyz": (mx - mn).tolist(),
+        "approx_surface_area": area,
+        "has_colors": mesh.colors is not None,
+        "has_uvs": mesh.uvs is not None,
+        "has_semantics": mesh.semantics is not None,
+    }
+
+
 def face_normals(mesh: Mesh) -> np.ndarray:
+    """Compute per-face unit normals using the cross-product of edge vectors."""
     v = mesh.vertices
     f = mesh.faces
     n = np.cross(v[f[:, 1]] - v[f[:, 0]], v[f[:, 2]] - v[f[:, 0]])
@@ -70,6 +107,7 @@ def face_normals(mesh: Mesh) -> np.ndarray:
 
 
 def vertex_normals(mesh: Mesh) -> np.ndarray:
+    """Compute per-vertex unit normals by averaging incident face normals."""
     normals = np.zeros_like(mesh.vertices, dtype=np.float64)
     fn = face_normals(mesh)
     for i in range(3):

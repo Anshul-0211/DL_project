@@ -14,6 +14,36 @@ def chamfer_distance(a: Mesh, b: Mesh) -> float:
     return float(0.5 * (da.mean() + db.mean()))
 
 
+def hausdorff_distance(a: Mesh, b: Mesh) -> float:
+    """One-sided and symmetric Hausdorff distance between two meshes.
+
+    Unlike Chamfer distance (which averages all nearest-neighbour distances),
+    Hausdorff captures the *worst-case* deviation — useful for spotting local
+    surface errors that the mean would otherwise hide.
+
+    Returns the symmetric Hausdorff distance: max(directed_a→b, directed_b→a).
+    """
+    ta = cKDTree(a.vertices)
+    tb = cKDTree(b.vertices)
+    da, _ = tb.query(a.vertices, k=1)
+    db, _ = ta.query(b.vertices, k=1)
+    return float(max(da.max(), db.max()))
+
+
+def mean_edge_length(mesh: Mesh) -> float:
+    """Average edge length across all triangle edges in the mesh.
+
+    Useful as a normalisation factor when comparing Chamfer / Hausdorff
+    distances across meshes of different scales.
+    """
+    v = mesh.vertices
+    f = mesh.faces
+    e0 = np.linalg.norm(v[f[:, 1]] - v[f[:, 0]], axis=1)
+    e1 = np.linalg.norm(v[f[:, 2]] - v[f[:, 1]], axis=1)
+    e2 = np.linalg.norm(v[f[:, 0]] - v[f[:, 2]], axis=1)
+    return float(np.concatenate([e0, e1, e2]).mean())
+
+
 def normal_consistency(a: Mesh, b: Mesh) -> float:
     ta = cKDTree(a.vertices)
     _, idx = ta.query(b.vertices, k=1)
