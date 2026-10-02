@@ -1,0 +1,22 @@
+[build-prior] 24 target meshes, 5023 vertices each
+[build-prior] SVD k=12 on (24, 15069) ...
+[build-prior] Top-5 singular values: [8.231717  4.711688  2.0826254 1.2374889 1.0800164]
+{
+  "prior_path": "showcase_2026_07_04\\step_04_build_prior\\showcase_prior.npz",
+  "vertex_count": 5023,
+  "n_components": 12,
+  "top_singular_values": [
+    8.231717109680176,
+    4.711688041687012,
+    2.082625389099121,
+    1.237488865852356,
+    1.0800163745880127,
+    0.7641069293022156,
+    0.546952486038208,
+    0.45722496509552,
+    0.3496672809123993,
+    0.2890765964984894
+  ]
+}
+
+Prior: showcase_2026_07_04/step_04_build_prior/showcase_prior.npz

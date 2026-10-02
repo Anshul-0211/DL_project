@@ -1,0 +1,210 @@
+{
+  "method": "Visibility-Aware Face Semantic ICP Wrap",
+  "chamfer_initial_to_source": 0.2650472616152759,
+  "chamfer_wrapped_to_source": 0.13982218120411427,
+  "chamfer_detailed_to_source": 0.13789493661893382,
+  "normal_consistency_wrapped": 0.47387521888922435,
+  "normal_consistency_detailed": 0.4733558957014349,
+  "landmark_rmse": 0.0658243066366405,
+  "semantic_region_chamfer": {
+    "nose": 0.13972794432224017,
+    "eyes": 0.18805364384036904,
+    "lips": 0.32936506103197344
+  },
+  "topology": {
+    "vertex_count": 26317,
+    "face_count": 52261,
+    "face_checksum": 2061347210,
+    "first_faces": [
+      [
+        0,
+        6595,
+        6596
+      ],
+      [
+        6595,
+        1,
+        6597
+      ],
+      [
+        6596,
+        6597,
+        2
+      ],
+      [
+        6596,
+        6595,
+        6597
+      ],
+      [
+        0,
+        6596,
+        6598
+      ],
+      [
+        6596,
+        2,
+        6599
+      ],
+      [
+        6598,
+        6599,
+        3
+      ],
+      [
+        6598,
+        6596,
+        6599
+      ]
+    ]
+  },
+  "timings_sec": {
+    "initial_alignment": 0.003690100013045594,
+    "semantic_icp": 8.792120899975998,
+    "detail_texture": 0.20251610002014786,
+    "load_prepare": 0.4838314999942668
+  },
+  "template": "custom_template_obj",
+  "template_warnings": [
+    "Template is not the common FLAME 5023/9976 topology; topology will still be preserved."
+  ],
+  "stage_logs": [
+    {
+      "accepted_ratio": 0.8241440893718889,
+      "mean_weight": 0.1497993980925947,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.46,
+      "smooth": 24.0,
+      "corr_weight": 0.8,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 1.0
+    },
+    {
+      "accepted_ratio": 0.6056161416574838,
+      "mean_weight": 0.15088419949827342,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.34,
+      "smooth": 12.0,
+      "corr_weight": 1.6,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 2.0
+    },
+    {
+      "accepted_ratio": 0.39856366607136073,
+      "mean_weight": 0.15603359653901336,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.24,
+      "smooth": 5.0,
+      "corr_weight": 2.8,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 3.0
+    },
+    {
+      "accepted_ratio": 0.2524603868222062,
+      "mean_weight": 0.15882260455402,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.16,
+      "smooth": 2.0,
+      "corr_weight": 4.2,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 4.0
+    }
+  ],
+  "convergence_history": [
+    {
+      "accepted_ratio": 0.8241440893718889,
+      "mean_weight": 0.1497993980925947,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.46,
+      "smooth": 24.0,
+      "corr_weight": 0.8,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 1.0
+    },
+    {
+      "accepted_ratio": 0.6056161416574838,
+      "mean_weight": 0.15088419949827342,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.34,
+      "smooth": 12.0,
+      "corr_weight": 1.6,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 2.0
+    },
+    {
+      "accepted_ratio": 0.39856366607136073,
+      "mean_weight": 0.15603359653901336,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.24,
+      "smooth": 5.0,
+      "corr_weight": 2.8,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 3.0
+    },
+    {
+      "accepted_ratio": 0.2524603868222062,
+      "mean_weight": 0.15882260455402,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 1.0,
+      "distance_gate": 0.16,
+      "smooth": 2.0,
+      "corr_weight": 4.2,
+      "arap_weight": 0.08,
+      "pca_weight": 0.0,
+      "uncertainty_weighted": 0.0,
+      "stage": 4.0
+    }
+  ],
+  "correspondence_stats": {
+    "min_acceptance_ratio": 0.2524603868222062,
+    "mean_acceptance_ratio": 0.520196070980735
+  },
+  "quality": "best",
+  "landmark_source": "mesh_uv_nearest",
+  "artifacts": {
+    "out_dir": "showcase_2026_07_04\\step_07_closed_loop_mesh",
+    "source_input": "showcase_2026_07_04\\step_07_closed_loop_mesh\\source_input.obj",
+    "initial_flame": "showcase_2026_07_04\\step_07_closed_loop_mesh\\initial_flame.obj",
+    "semantic_icp_wrapped": "showcase_2026_07_04\\step_07_closed_loop_mesh\\semantic_icp_wrapped.obj",
+    "result_obj": "showcase_2026_07_04\\step_07_closed_loop_mesh\\result_flame.obj",
+    "result_ply": "showcase_2026_07_04\\step_07_closed_loop_mesh\\result_flame.ply",
+    "texture": "showcase_2026_07_04\\step_07_closed_loop_mesh\\texture.png",
+    "metrics": "showcase_2026_07_04\\step_07_closed_loop_mesh\\metrics.json",
+    "viewer": "showcase_2026_07_04\\step_07_closed_loop_mesh\\viewer.html",
+    "manifest": "showcase_2026_07_04\\step_07_closed_loop_mesh\\artifact_manifest.json",
+    "semantic_overlay": "showcase_2026_07_04\\step_07_closed_loop_mesh\\semantic_overlay.png",
+    "detail_residual": "showcase_2026_07_04\\step_07_closed_loop_mesh\\detail_residual.npy",
+    "ablation_report": "showcase_2026_07_04\\step_07_closed_loop_mesh\\ablation_report.json"
+  }
+}
+
+Open: showcase_2026_07_04\step_07_closed_loop_mesh\viewer.html

@@ -1,0 +1,63 @@
+{
+  "dataset": "famos",
+  "root": "data\\famos_flame_subset\\registrations",
+  "target_root": null,
+  "manifest": "showcase_2026_07_04\\step_02_dataset_scan\\dataset_manifest.jsonl",
+  "total_items": 1024,
+  "ok_items": 1017,
+  "error_items": 7,
+  "flame_topology_items": 1017,
+  "items_with_target": 1017,
+  "source_glob": null,
+  "target_glob": null,
+  "template_topology": {
+    "vertex_count": 4161,
+    "face_count": 8064,
+    "face_checksum": 50319360,
+    "first_faces": [
+      [
+        0,
+        57,
+        1
+      ],
+      [
+        1,
+        57,
+        58
+      ],
+      [
+        1,
+        58,
+        2
+      ],
+      [
+        2,
+        58,
+        59
+      ],
+      [
+        2,
+        59,
+        3
+      ],
+      [
+        3,
+        59,
+        60
+      ],
+      [
+        3,
+        60,
+        4
+      ],
+      [
+        4,
+        60,
+        61
+      ]
+    ]
+  },
+  "notes": [
+    "FaMoS is license-gated and may include FLAME-topology registrations; this scanner expects local files only."
+  ]
+}

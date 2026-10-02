@@ -1,0 +1,135 @@
+{
+  "method": "Visibility-Aware Face Semantic ICP Wrap ablation",
+  "variants": [
+    {
+      "variant": "landmark_only",
+      "chamfer_wrapped": 0.02019513644650113,
+      "chamfer_detailed": 0.02019513644650113,
+      "mean_acceptance_ratio": 0.0,
+      "stages": []
+    },
+    {
+      "variant": "nonsemantic_icp",
+      "chamfer_wrapped": 0.0064250547786002515,
+      "chamfer_detailed": 0.006353431284304871,
+      "mean_acceptance_ratio": 0.9552760573013641,
+      "stages": [
+        {
+          "accepted_ratio": 0.9899304631986928,
+          "mean_weight": 0.808967724908067,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.55,
+          "smooth": 28.0,
+          "corr_weight": 0.8,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.9570239768970628,
+          "mean_weight": 0.8873710984611444,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.34,
+          "smooth": 14.0,
+          "corr_weight": 1.6,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.9188737318083369,
+          "mean_weight": 0.9284751626829013,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.22,
+          "smooth": 6.0,
+          "corr_weight": 2.6,
+          "stage": 3.0
+        }
+      ]
+    },
+    {
+      "variant": "semantic_icp",
+      "chamfer_wrapped": 0.006538693177596701,
+      "chamfer_detailed": 0.006464094573555632,
+      "mean_acceptance_ratio": 0.9573659611657864,
+      "stages": [
+        {
+          "accepted_ratio": 0.9892464946612456,
+          "mean_weight": 0.8097217319948289,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.55,
+          "smooth": 28.0,
+          "corr_weight": 0.8,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.9575939506782688,
+          "mean_weight": 0.8867451652454726,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.34,
+          "smooth": 14.0,
+          "corr_weight": 1.6,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.9252574381578448,
+          "mean_weight": 0.9221102935404899,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.22,
+          "smooth": 6.0,
+          "corr_weight": 2.6,
+          "stage": 3.0
+        }
+      ]
+    },
+    {
+      "variant": "visibility_aware_semantic_icp",
+      "chamfer_wrapped": 0.006542078542673354,
+      "chamfer_detailed": 0.006467329544888959,
+      "mean_acceptance_ratio": 0.9572772985775989,
+      "stages": [
+        {
+          "accepted_ratio": 0.9892464946612456,
+          "mean_weight": 0.8062462300982894,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.55,
+          "smooth": 28.0,
+          "corr_weight": 0.8,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.9575559524261884,
+          "mean_weight": 0.8828317803191474,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.34,
+          "smooth": 14.0,
+          "corr_weight": 1.6,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.9250294486453623,
+          "mean_weight": 0.9182183381521763,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.22,
+          "smooth": 6.0,
+          "corr_weight": 2.6,
+          "stage": 3.0
+        }
+      ]
+    }
+  ]
+}

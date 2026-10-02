@@ -1,0 +1,912 @@
+{
+  "checkpoint": "outputs\\famos_flame_subset_train\\deformnet.pt",
+  "pairs": "outputs\\famos_flame_subset_pairs\\pairs_manifest.jsonl",
+  "baseline": "none",
+  "device": "cuda",
+  "pair_count": 100,
+  "mean_learned_chamfer": 0.0213941878212884,
+  "mean_icp_chamfer": null,
+  "subject_split": null,
+  "rows": [
+    {
+      "pair_id": "pair_000000",
+      "learned_chamfer": 0.018083702321735475,
+      "learned_normal_consistency": 0.8662332304561232,
+      "learned_runtime_sec": 0.19212339993100613,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000001",
+      "learned_chamfer": 0.017956137289523125,
+      "learned_normal_consistency": 0.8739188328757688,
+      "learned_runtime_sec": 0.0011059000389650464,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000002",
+      "learned_chamfer": 0.018659487603546514,
+      "learned_normal_consistency": 0.8617908637577097,
+      "learned_runtime_sec": 0.0009562000632286072,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000003",
+      "learned_chamfer": 0.019700596474655094,
+      "learned_normal_consistency": 0.8575305745032358,
+      "learned_runtime_sec": 0.000964100006967783,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000004",
+      "learned_chamfer": 0.017479264494022387,
+      "learned_normal_consistency": 0.8735566935357031,
+      "learned_runtime_sec": 0.0017374000744894147,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000005",
+      "learned_chamfer": 0.02126890090133491,
+      "learned_normal_consistency": 0.8277194253274879,
+      "learned_runtime_sec": 0.0017439000075682998,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000006",
+      "learned_chamfer": 0.01777466534325515,
+      "learned_normal_consistency": 0.871880603678103,
+      "learned_runtime_sec": 0.0011133999796584249,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000007",
+      "learned_chamfer": 0.017982569011618627,
+      "learned_normal_consistency": 0.8666773953551141,
+      "learned_runtime_sec": 0.0009981999173760414,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000008",
+      "learned_chamfer": 0.02134076040724709,
+      "learned_normal_consistency": 0.8332776967042108,
+      "learned_runtime_sec": 0.0012766000581905246,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000009",
+      "learned_chamfer": 0.025342533771376366,
+      "learned_normal_consistency": 0.7885870870359925,
+      "learned_runtime_sec": 0.0009175000013783574,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000010",
+      "learned_chamfer": 0.01642010035741591,
+      "learned_normal_consistency": 0.8932072818392266,
+      "learned_runtime_sec": 0.002212399966083467,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000011",
+      "learned_chamfer": 0.01739958512383257,
+      "learned_normal_consistency": 0.8883841674794765,
+      "learned_runtime_sec": 0.001025000005029142,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000012",
+      "learned_chamfer": 0.019313470915503252,
+      "learned_normal_consistency": 0.8477194591645308,
+      "learned_runtime_sec": 0.0010249000042676926,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000013",
+      "learned_chamfer": 0.016451916165966737,
+      "learned_normal_consistency": 0.8956998585588709,
+      "learned_runtime_sec": 0.000952300033532083,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000014",
+      "learned_chamfer": 0.021944944149545943,
+      "learned_normal_consistency": 0.8144757037627552,
+      "learned_runtime_sec": 0.001030100043863058,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000015",
+      "learned_chamfer": 0.017279522806085933,
+      "learned_normal_consistency": 0.8780549094833097,
+      "learned_runtime_sec": 0.0011091000633314252,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000016",
+      "learned_chamfer": 0.01990791597121369,
+      "learned_normal_consistency": 0.8441288042834907,
+      "learned_runtime_sec": 0.0011390999425202608,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000017",
+      "learned_chamfer": 0.018633043187371724,
+      "learned_normal_consistency": 0.8661823334501811,
+      "learned_runtime_sec": 0.001185299945063889,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000018",
+      "learned_chamfer": 0.022545403013632635,
+      "learned_normal_consistency": 0.8089874822141231,
+      "learned_runtime_sec": 0.002125500002875924,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000019",
+      "learned_chamfer": 0.019978886322821847,
+      "learned_normal_consistency": 0.8511072484178478,
+      "learned_runtime_sec": 0.0009609999833628535,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000020",
+      "learned_chamfer": 0.017799879791179203,
+      "learned_normal_consistency": 0.8886047281247086,
+      "learned_runtime_sec": 0.0010523999808356166,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000021",
+      "learned_chamfer": 0.021322745009168746,
+      "learned_normal_consistency": 0.825299119653591,
+      "learned_runtime_sec": 0.001333800028078258,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000022",
+      "learned_chamfer": 0.017096543185359026,
+      "learned_normal_consistency": 0.8822063352523953,
+      "learned_runtime_sec": 0.0010565000120550394,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000023",
+      "learned_chamfer": 0.01779601343332801,
+      "learned_normal_consistency": 0.8678806725076595,
+      "learned_runtime_sec": 0.0009654000168666244,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000024",
+      "learned_chamfer": 0.017648213356170717,
+      "learned_normal_consistency": 0.8848538274861645,
+      "learned_runtime_sec": 0.001232299953699112,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000025",
+      "learned_chamfer": 0.01695499550210202,
+      "learned_normal_consistency": 0.8841525006351416,
+      "learned_runtime_sec": 0.009451899910345674,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000026",
+      "learned_chamfer": 0.018049067658921947,
+      "learned_normal_consistency": 0.870725197645578,
+      "learned_runtime_sec": 0.0101091000251472,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000027",
+      "learned_chamfer": 0.0177162260559221,
+      "learned_normal_consistency": 0.8850775934219635,
+      "learned_runtime_sec": 0.010942300083115697,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000028",
+      "learned_chamfer": 0.02246150201442719,
+      "learned_normal_consistency": 0.8001163438473758,
+      "learned_runtime_sec": 0.010423499974422157,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000029",
+      "learned_chamfer": 0.021672423976710185,
+      "learned_normal_consistency": 0.7908114896839016,
+      "learned_runtime_sec": 0.011339199962094426,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000030",
+      "learned_chamfer": 0.0216485976478653,
+      "learned_normal_consistency": 0.8052491203576702,
+      "learned_runtime_sec": 0.014048799988813698,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000031",
+      "learned_chamfer": 0.02168035106361684,
+      "learned_normal_consistency": 0.8107521748915488,
+      "learned_runtime_sec": 0.012671699980273843,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000032",
+      "learned_chamfer": 0.02229288383145448,
+      "learned_normal_consistency": 0.8059868238895964,
+      "learned_runtime_sec": 0.01260989997535944,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000033",
+      "learned_chamfer": 0.02281782440119584,
+      "learned_normal_consistency": 0.801584084772231,
+      "learned_runtime_sec": 0.011514200014062226,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000034",
+      "learned_chamfer": 0.023076108106685703,
+      "learned_normal_consistency": 0.7880753832601481,
+      "learned_runtime_sec": 0.01081709994468838,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000035",
+      "learned_chamfer": 0.023242170712336176,
+      "learned_normal_consistency": 0.7845202256828991,
+      "learned_runtime_sec": 0.01587659993674606,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000036",
+      "learned_chamfer": 0.025432068317149413,
+      "learned_normal_consistency": 0.7735423806103903,
+      "learned_runtime_sec": 0.011274000047706068,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000037",
+      "learned_chamfer": 0.02232868356686874,
+      "learned_normal_consistency": 0.7947134698463533,
+      "learned_runtime_sec": 0.015221400070004165,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000038",
+      "learned_chamfer": 0.023136885752915344,
+      "learned_normal_consistency": 0.7886387914976517,
+      "learned_runtime_sec": 0.017598000005818903,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000039",
+      "learned_chamfer": 0.021998038030148062,
+      "learned_normal_consistency": 0.8008910221258354,
+      "learned_runtime_sec": 0.02276630001142621,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000040",
+      "learned_chamfer": 0.021962476794664,
+      "learned_normal_consistency": 0.7995468651407535,
+      "learned_runtime_sec": 0.016239000018686056,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000041",
+      "learned_chamfer": 0.02186518632463715,
+      "learned_normal_consistency": 0.8004049773739849,
+      "learned_runtime_sec": 0.021522300085052848,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000042",
+      "learned_chamfer": 0.021330898656429356,
+      "learned_normal_consistency": 0.8176019085295505,
+      "learned_runtime_sec": 0.022865199949592352,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000043",
+      "learned_chamfer": 0.02199471831590472,
+      "learned_normal_consistency": 0.8000885884736958,
+      "learned_runtime_sec": 0.025103899999521673,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000044",
+      "learned_chamfer": 0.02112357480998927,
+      "learned_normal_consistency": 0.8019154832894548,
+      "learned_runtime_sec": 0.014223399921320379,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000045",
+      "learned_chamfer": 0.022457708813793432,
+      "learned_normal_consistency": 0.7926150410515361,
+      "learned_runtime_sec": 0.02934160002041608,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000046",
+      "learned_chamfer": 0.021455090447933787,
+      "learned_normal_consistency": 0.8113566000506178,
+      "learned_runtime_sec": 0.012951600016094744,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000047",
+      "learned_chamfer": 0.02300002077160747,
+      "learned_normal_consistency": 0.7848564537755067,
+      "learned_runtime_sec": 0.02684840001165867,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000048",
+      "learned_chamfer": 0.02204343973428468,
+      "learned_normal_consistency": 0.8128049141362963,
+      "learned_runtime_sec": 0.03014609997626394,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000049",
+      "learned_chamfer": 0.02220276734040886,
+      "learned_normal_consistency": 0.7962944945543775,
+      "learned_runtime_sec": 0.02966899995226413,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000050",
+      "learned_chamfer": 0.024694790112444468,
+      "learned_normal_consistency": 0.7798156836736617,
+      "learned_runtime_sec": 0.020408600103110075,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000051",
+      "learned_chamfer": 0.022663882895557264,
+      "learned_normal_consistency": 0.7858620080238736,
+      "learned_runtime_sec": 0.029677500016987324,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000052",
+      "learned_chamfer": 0.02070827385628638,
+      "learned_normal_consistency": 0.8138298936161021,
+      "learned_runtime_sec": 0.018216799944639206,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000053",
+      "learned_chamfer": 0.02219329426597966,
+      "learned_normal_consistency": 0.8061845809404529,
+      "learned_runtime_sec": 0.024186399998143315,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000054",
+      "learned_chamfer": 0.022498331448782105,
+      "learned_normal_consistency": 0.7919695086786533,
+      "learned_runtime_sec": 0.022382099996320903,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000055",
+      "learned_chamfer": 0.022071499209298497,
+      "learned_normal_consistency": 0.7923967362954559,
+      "learned_runtime_sec": 0.023457099916413426,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000056",
+      "learned_chamfer": 0.02183770760700665,
+      "learned_normal_consistency": 0.8168579511243211,
+      "learned_runtime_sec": 0.01563110004644841,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000057",
+      "learned_chamfer": 0.02156748615333771,
+      "learned_normal_consistency": 0.8187505895757717,
+      "learned_runtime_sec": 0.015210299985483289,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000058",
+      "learned_chamfer": 0.021322080331538883,
+      "learned_normal_consistency": 0.8221723657392239,
+      "learned_runtime_sec": 0.01902690005954355,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000059",
+      "learned_chamfer": 0.02109692209144239,
+      "learned_normal_consistency": 0.8224688302692581,
+      "learned_runtime_sec": 0.025386800058186054,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000060",
+      "learned_chamfer": 0.022202601055123002,
+      "learned_normal_consistency": 0.810457421144794,
+      "learned_runtime_sec": 0.020009599975310266,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000061",
+      "learned_chamfer": 0.022372059609742263,
+      "learned_normal_consistency": 0.8057985898313966,
+      "learned_runtime_sec": 0.019074499956332147,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000062",
+      "learned_chamfer": 0.021699537533379845,
+      "learned_normal_consistency": 0.812172547028855,
+      "learned_runtime_sec": 0.02834479999728501,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000063",
+      "learned_chamfer": 0.022261906883518725,
+      "learned_normal_consistency": 0.8079443835372496,
+      "learned_runtime_sec": 0.0269015000667423,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000064",
+      "learned_chamfer": 0.02187209628378476,
+      "learned_normal_consistency": 0.8122640610180879,
+      "learned_runtime_sec": 0.02665730006992817,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000065",
+      "learned_chamfer": 0.0205645636626276,
+      "learned_normal_consistency": 0.8243835584909891,
+      "learned_runtime_sec": 0.020154800033196807,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000066",
+      "learned_chamfer": 0.02156261594456918,
+      "learned_normal_consistency": 0.8117710680456389,
+      "learned_runtime_sec": 0.020672200014814734,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000067",
+      "learned_chamfer": 0.02079415671573963,
+      "learned_normal_consistency": 0.8247798576629455,
+      "learned_runtime_sec": 0.01909630000591278,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000068",
+      "learned_chamfer": 0.021627435386447354,
+      "learned_normal_consistency": 0.8201954001478744,
+      "learned_runtime_sec": 0.015732200001366436,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000069",
+      "learned_chamfer": 0.022998632307611018,
+      "learned_normal_consistency": 0.8058953434844192,
+      "learned_runtime_sec": 0.02436230005696416,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000070",
+      "learned_chamfer": 0.02291289252983843,
+      "learned_normal_consistency": 0.8169626379827302,
+      "learned_runtime_sec": 0.015494100051000714,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000071",
+      "learned_chamfer": 0.023748007756317923,
+      "learned_normal_consistency": 0.8071159210114653,
+      "learned_runtime_sec": 0.013249599956907332,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000072",
+      "learned_chamfer": 0.023121929565274757,
+      "learned_normal_consistency": 0.8127991009627419,
+      "learned_runtime_sec": 0.023057700018398464,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000073",
+      "learned_chamfer": 0.021874058289076216,
+      "learned_normal_consistency": 0.8144615184881353,
+      "learned_runtime_sec": 0.018368600052781403,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000074",
+      "learned_chamfer": 0.022847211333321352,
+      "learned_normal_consistency": 0.8055426937184643,
+      "learned_runtime_sec": 0.02642889996059239,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000075",
+      "learned_chamfer": 0.02184215676206435,
+      "learned_normal_consistency": 0.8185936317950568,
+      "learned_runtime_sec": 0.026266200002282858,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000076",
+      "learned_chamfer": 0.022081097462138023,
+      "learned_normal_consistency": 0.8110545851699343,
+      "learned_runtime_sec": 0.02159170003142208,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000077",
+      "learned_chamfer": 0.022352764208870772,
+      "learned_normal_consistency": 0.8163603666919507,
+      "learned_runtime_sec": 0.024308099993504584,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000078",
+      "learned_chamfer": 0.022055308499929746,
+      "learned_normal_consistency": 0.8181032897514963,
+      "learned_runtime_sec": 0.022650199942290783,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000079",
+      "learned_chamfer": 0.02208962959881839,
+      "learned_normal_consistency": 0.8149225824625224,
+      "learned_runtime_sec": 0.026337599963881075,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000080",
+      "learned_chamfer": 0.021505749230168972,
+      "learned_normal_consistency": 0.8270157376453047,
+      "learned_runtime_sec": 0.02200919995084405,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000081",
+      "learned_chamfer": 0.022859853199522582,
+      "learned_normal_consistency": 0.8058058341732448,
+      "learned_runtime_sec": 0.020167999900877476,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000082",
+      "learned_chamfer": 0.02250188026520741,
+      "learned_normal_consistency": 0.8197326599181091,
+      "learned_runtime_sec": 0.025752600049600005,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000083",
+      "learned_chamfer": 0.02136156743172212,
+      "learned_normal_consistency": 0.8145736552726796,
+      "learned_runtime_sec": 0.02140349999535829,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000084",
+      "learned_chamfer": 0.019798825017442755,
+      "learned_normal_consistency": 0.8215690760429839,
+      "learned_runtime_sec": 0.016080999979749322,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000085",
+      "learned_chamfer": 0.01663348106385425,
+      "learned_normal_consistency": 0.861855391170029,
+      "learned_runtime_sec": 0.02133690007030964,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000086",
+      "learned_chamfer": 0.019216359511861722,
+      "learned_normal_consistency": 0.8422042105004912,
+      "learned_runtime_sec": 0.01895719999447465,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000087",
+      "learned_chamfer": 0.01893323420524693,
+      "learned_normal_consistency": 0.8421419777991915,
+      "learned_runtime_sec": 0.015058799996040761,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000088",
+      "learned_chamfer": 0.020759957677000923,
+      "learned_normal_consistency": 0.826817605409795,
+      "learned_runtime_sec": 0.01825019996613264,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000089",
+      "learned_chamfer": 0.018039098139713352,
+      "learned_normal_consistency": 0.8509123974233086,
+      "learned_runtime_sec": 0.015056399977765977,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000090",
+      "learned_chamfer": 0.017767482189753256,
+      "learned_normal_consistency": 0.8597403833685227,
+      "learned_runtime_sec": 0.02735190000385046,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000091",
+      "learned_chamfer": 0.06798143616863654,
+      "learned_normal_consistency": 0.6318979664594045,
+      "learned_runtime_sec": 0.02874790003988892,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000092",
+      "learned_chamfer": 0.02689047437098233,
+      "learned_normal_consistency": 0.7655423988225029,
+      "learned_runtime_sec": 0.024867799947969615,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000093",
+      "learned_chamfer": 0.020523750064657426,
+      "learned_normal_consistency": 0.8040322997677651,
+      "learned_runtime_sec": 0.017052700044587255,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000094",
+      "learned_chamfer": 0.020501732378887513,
+      "learned_normal_consistency": 0.8360655453989081,
+      "learned_runtime_sec": 0.01940620003733784,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000095",
+      "learned_chamfer": 0.0186700901064263,
+      "learned_normal_consistency": 0.8480339221670028,
+      "learned_runtime_sec": 0.02428949996829033,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000096",
+      "learned_chamfer": 0.01981359603350277,
+      "learned_normal_consistency": 0.8315040457872126,
+      "learned_runtime_sec": 0.019631600007414818,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000097",
+      "learned_chamfer": 0.02267516479389875,
+      "learned_normal_consistency": 0.8020018274216486,
+      "learned_runtime_sec": 0.017339900019578636,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000098",
+      "learned_chamfer": 0.018925952758593455,
+      "learned_normal_consistency": 0.8526100082688569,
+      "learned_runtime_sec": 0.021499899914488196,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    },
+    {
+      "pair_id": "pair_000099",
+      "learned_chamfer": 0.019453659107009615,
+      "learned_normal_consistency": 0.8411533062916513,
+      "learned_runtime_sec": 0.004442799952812493,
+      "icp_chamfer": null,
+      "icp_normal_consistency": null,
+      "icp_runtime_sec": null
+    }
+  ]
+}

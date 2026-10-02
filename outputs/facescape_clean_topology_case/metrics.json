@@ -1,0 +1,161 @@
+{
+  "method": "Visibility-Aware Face Semantic ICP Wrap",
+  "chamfer_initial_to_source": 0.02019513644650113,
+  "chamfer_wrapped_to_source": 0.006538693177596701,
+  "chamfer_detailed_to_source": 0.006464094573555632,
+  "normal_consistency_wrapped": 0.9005524289425003,
+  "normal_consistency_detailed": 0.9029622869601971,
+  "landmark_rmse": 3.413322440381079e-05,
+  "semantic_region_chamfer": {
+    "nose": 0.004267701089297417,
+    "eyes": 0.009480236051359042,
+    "lips": 0.005050069011763747
+  },
+  "topology": {
+    "vertex_count": 26317,
+    "face_count": 52261,
+    "face_checksum": 2061347210,
+    "first_faces": [
+      [
+        0,
+        6595,
+        6596
+      ],
+      [
+        6595,
+        1,
+        6597
+      ],
+      [
+        6596,
+        6597,
+        2
+      ],
+      [
+        6596,
+        6595,
+        6597
+      ],
+      [
+        0,
+        6596,
+        6598
+      ],
+      [
+        6596,
+        2,
+        6599
+      ],
+      [
+        6598,
+        6599,
+        3
+      ],
+      [
+        6598,
+        6596,
+        6599
+      ]
+    ]
+  },
+  "timings_sec": {
+    "initial_alignment": 0.010830400045961142,
+    "semantic_icp": 6.311128800036386,
+    "detail_texture": 0.09277979983016849
+  },
+  "template": "custom_template_obj",
+  "template_warnings": [
+    "Template is not the common FLAME 5023/9976 topology; topology will still be preserved."
+  ],
+  "stage_logs": [
+    {
+      "accepted_ratio": 0.9892464946612456,
+      "mean_weight": 0.8097217319948289,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.55,
+      "smooth": 28.0,
+      "corr_weight": 0.8,
+      "stage": 1.0
+    },
+    {
+      "accepted_ratio": 0.9575939506782688,
+      "mean_weight": 0.8867451652454726,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.34,
+      "smooth": 14.0,
+      "corr_weight": 1.6,
+      "stage": 2.0
+    },
+    {
+      "accepted_ratio": 0.9252574381578448,
+      "mean_weight": 0.9221102935404899,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.22,
+      "smooth": 6.0,
+      "corr_weight": 2.6,
+      "stage": 3.0
+    }
+  ],
+  "convergence_history": [
+    {
+      "accepted_ratio": 0.9892464946612456,
+      "mean_weight": 0.8097217319948289,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.55,
+      "smooth": 28.0,
+      "corr_weight": 0.8,
+      "stage": 1.0
+    },
+    {
+      "accepted_ratio": 0.9575939506782688,
+      "mean_weight": 0.8867451652454726,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.34,
+      "smooth": 14.0,
+      "corr_weight": 1.6,
+      "stage": 2.0
+    },
+    {
+      "accepted_ratio": 0.9252574381578448,
+      "mean_weight": 0.9221102935404899,
+      "rejected_bidirectional": 0.0,
+      "semantic_enabled": 1.0,
+      "visibility_enabled": 0.0,
+      "distance_gate": 0.22,
+      "smooth": 6.0,
+      "corr_weight": 2.6,
+      "stage": 3.0
+    }
+  ],
+  "correspondence_stats": {
+    "min_acceptance_ratio": 0.9252574381578448,
+    "mean_acceptance_ratio": 0.9573659611657864
+  },
+  "quality": "best",
+  "landmark_source": "facescape_official_3d_landmark_indices",
+  "artifacts": {
+    "out_dir": "outputs\\facescape_clean_topology_case",
+    "source_input": "outputs\\facescape_clean_topology_case\\source_input.obj",
+    "initial_flame": "outputs\\facescape_clean_topology_case\\initial_flame.obj",
+    "semantic_icp_wrapped": "outputs\\facescape_clean_topology_case\\semantic_icp_wrapped.obj",
+    "result_obj": "outputs\\facescape_clean_topology_case\\result_flame.obj",
+    "result_ply": "outputs\\facescape_clean_topology_case\\result_flame.ply",
+    "texture": "outputs\\facescape_clean_topology_case\\texture.png",
+    "metrics": "outputs\\facescape_clean_topology_case\\metrics.json",
+    "viewer": "outputs\\facescape_clean_topology_case\\viewer.html",
+    "manifest": "outputs\\facescape_clean_topology_case\\artifact_manifest.json",
+    "semantic_overlay": "outputs\\facescape_clean_topology_case\\semantic_overlay.png",
+    "detail_residual": "outputs\\facescape_clean_topology_case\\detail_residual.npy",
+    "ablation_report": "outputs\\facescape_clean_topology_case\\ablation_report.json"
+  }
+}

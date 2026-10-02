@@ -1,0 +1,204 @@
+{
+  "method": "Visibility-Aware Face Semantic ICP Wrap ablation",
+  "variants": [
+    {
+      "variant": "landmark_only",
+      "chamfer_wrapped": 0.2650472616152759,
+      "chamfer_detailed": 0.2650472616152759,
+      "mean_acceptance_ratio": 0.0,
+      "stages": []
+    },
+    {
+      "variant": "nonsemantic_icp",
+      "chamfer_wrapped": 0.11181638734252429,
+      "chamfer_detailed": 0.1108272375157553,
+      "mean_acceptance_ratio": 0.617756583197173,
+      "stages": [
+        {
+          "accepted_ratio": 0.8352775772314474,
+          "mean_weight": 0.35925865632584536,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.46,
+          "smooth": 24.0,
+          "corr_weight": 0.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.6355967625489227,
+          "mean_weight": 0.5208919225368456,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.34,
+          "smooth": 12.0,
+          "corr_weight": 1.6,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.5241858874491774,
+          "mean_weight": 0.629611244741874,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.24,
+          "smooth": 5.0,
+          "corr_weight": 2.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 3.0
+        },
+        {
+          "accepted_ratio": 0.47596610555914426,
+          "mean_weight": 0.7080684684150317,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 0.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.16,
+          "smooth": 2.0,
+          "corr_weight": 4.2,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 4.0
+        }
+      ]
+    },
+    {
+      "variant": "semantic_icp",
+      "chamfer_wrapped": 0.11448648531533112,
+      "chamfer_detailed": 0.11329780704505996,
+      "mean_acceptance_ratio": 0.5671429114260744,
+      "stages": [
+        {
+          "accepted_ratio": 0.8241440893718889,
+          "mean_weight": 0.3599942350599533,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.46,
+          "smooth": 24.0,
+          "corr_weight": 0.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.6009803549036744,
+          "mean_weight": 0.4913633784546545,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.34,
+          "smooth": 12.0,
+          "corr_weight": 1.6,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.4610327924915454,
+          "mean_weight": 0.5818341238399432,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.24,
+          "smooth": 5.0,
+          "corr_weight": 2.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 3.0
+        },
+        {
+          "accepted_ratio": 0.38241440893718887,
+          "mean_weight": 0.6483633254429306,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 0.0,
+          "distance_gate": 0.16,
+          "smooth": 2.0,
+          "corr_weight": 4.2,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 4.0
+        }
+      ]
+    },
+    {
+      "variant": "visibility_aware_semantic_icp",
+      "chamfer_wrapped": 0.13982218120411427,
+      "chamfer_detailed": 0.13789493661893382,
+      "mean_acceptance_ratio": 0.520196070980735,
+      "stages": [
+        {
+          "accepted_ratio": 0.8241440893718889,
+          "mean_weight": 0.1497993980925947,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.46,
+          "smooth": 24.0,
+          "corr_weight": 0.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 1.0
+        },
+        {
+          "accepted_ratio": 0.6056161416574838,
+          "mean_weight": 0.15088419949827342,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.34,
+          "smooth": 12.0,
+          "corr_weight": 1.6,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 2.0
+        },
+        {
+          "accepted_ratio": 0.39856366607136073,
+          "mean_weight": 0.15603359653901336,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.24,
+          "smooth": 5.0,
+          "corr_weight": 2.8,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 3.0
+        },
+        {
+          "accepted_ratio": 0.2524603868222062,
+          "mean_weight": 0.15882260455402,
+          "rejected_bidirectional": 0.0,
+          "semantic_enabled": 1.0,
+          "visibility_enabled": 1.0,
+          "distance_gate": 0.16,
+          "smooth": 2.0,
+          "corr_weight": 4.2,
+          "arap_weight": 0.08,
+          "pca_weight": 0.0,
+          "uncertainty_weighted": 0.0,
+          "stage": 4.0
+        }
+      ]
+    }
+  ]
+}

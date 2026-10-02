@@ -1,0 +1,96 @@
+{
+  "checkpoint": "showcase_2026_07_04\\step_05_train_deformnet\\v2\\deformnet.pt",
+  "device": "cuda",
+  "pair_count": 1000,
+  "epochs": 20,
+  "history": [
+    {
+      "epoch": 1.0,
+      "loss": -1.4591363686472179
+    },
+    {
+      "epoch": 2.0,
+      "loss": -1.7864948816299437
+    },
+    {
+      "epoch": 3.0,
+      "loss": -1.8814025435447692
+    },
+    {
+      "epoch": 4.0,
+      "loss": -2.0443752288818358
+    },
+    {
+      "epoch": 5.0,
+      "loss": -2.0999870591163634
+    },
+    {
+      "epoch": 6.0,
+      "loss": -2.1532691650390623
+    },
+    {
+      "epoch": 7.0,
+      "loss": -2.2072313957214353
+    },
+    {
+      "epoch": 8.0,
+      "loss": -2.2580962772369384
+    },
+    {
+      "epoch": 9.0,
+      "loss": -2.2904065656661987
+    },
+    {
+      "epoch": 10.0,
+      "loss": -2.3789613065719606
+    },
+    {
+      "epoch": 11.0,
+      "loss": -2.427231202125549
+    },
+    {
+      "epoch": 12.0,
+      "loss": -2.507397318840027
+    },
+    {
+      "epoch": 13.0,
+      "loss": -2.5509623403549195
+    },
+    {
+      "epoch": 14.0,
+      "loss": -2.572664514541626
+    },
+    {
+      "epoch": 15.0,
+      "loss": -2.5745115966796877
+    },
+    {
+      "epoch": 16.0,
+      "loss": -2.643588674545288
+    },
+    {
+      "epoch": 17.0,
+      "loss": -2.7001312522888186
+    },
+    {
+      "epoch": 18.0,
+      "loss": -2.682172647476196
+    },
+    {
+      "epoch": 19.0,
+      "loss": -2.7280115413665773
+    },
+    {
+      "epoch": 20.0,
+      "loss": -2.747874574661255
+    }
+  ],
+  "runtime_sec": 163.75608980000834,
+  "sample_outputs": {
+    "prediction": "showcase_2026_07_04\\step_05_train_deformnet\\v2\\sample_prediction.obj",
+    "target": "showcase_2026_07_04\\step_05_train_deformnet\\v2\\sample_target.obj",
+    "viewer": "showcase_2026_07_04\\step_05_train_deformnet\\v2\\sample_viewer.html"
+  }
+}
+
+Checkpoint: showcase_2026_07_04\step_05_train_deformnet\v2\deformnet.pt

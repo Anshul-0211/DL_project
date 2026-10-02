@@ -1,0 +1,42 @@
+{
+  "method": "FaMoS-learned FLAME deformation prior",
+  "pair_count": 1000,
+  "components": 12,
+  "topology": {
+    "vertex_count": 5023,
+    "face_count": 9976
+  },
+  "explained_variance_ratio": [
+    0.3846139907836914,
+    0.3218626379966736,
+    0.09254717826843262,
+    0.07300754636526108,
+    0.032814085483551025,
+    0.0239032581448555,
+    0.014319815672934055,
+    0.011870854534208775,
+    0.00824918132275343,
+    0.0063244858756661415,
+    0.004668240435421467,
+    0.003672551130875945
+  ],
+  "cumulative_explained_variance": [
+    0.3846139907836914,
+    0.706476628780365,
+    0.7990238070487976,
+    0.8720313534140587,
+    0.9048454388976097,
+    0.9287486970424652,
+    0.9430685127153993,
+    0.954939367249608,
+    0.9631885485723615,
+    0.9695130344480276,
+    0.9741812748834491,
+    0.977853826014325
+  ],
+  "artifacts": {
+    "prior": "outputs\\famos_deformation_prior\\famos_deformation_prior.npz",
+    "mean_obj": "outputs\\famos_deformation_prior\\famos_prior_mean.obj",
+    "showcase": "outputs\\famos_deformation_prior\\01_famos_deformation_prior_showcase.png"
+  }
+}

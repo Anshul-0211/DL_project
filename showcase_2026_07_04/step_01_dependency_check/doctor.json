@@ -1,0 +1,140 @@
+{
+  "status": "ok",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "core_dependencies": {
+    "numpy": true,
+    "scipy": true,
+    "PIL": true,
+    "cv2": true,
+    "sklearn": true
+  },
+  "optional_adapters": {
+    "torch": true,
+    "torchvision": true,
+    "mediapipe": false,
+    "insightface": false,
+    "mica": false,
+    "micalib": false,
+    "decalib": false,
+    "trimesh": false
+  },
+  "gpu": {
+    "available": true,
+    "devices": [
+      "NVIDIA GeForce RTX 5070 Laptop GPU, 8151 MiB"
+    ]
+  },
+  "assets": {
+    "assets_dir": "D:\\DL_project\\assets",
+    "default_flame_template": false
+  },
+  "datasets": {
+    "local_base": "D:\\datasets",
+    "entries": [
+      {
+        "name": "famos",
+        "priority": "primary",
+        "access": "license-gated",
+        "url": "https://cove.thecvf.com/datasets/969",
+        "role": "dynamic 3D head scans with FLAME-topology registrations when licensed assets are available",
+        "local_hint": "D:/datasets/face_retopology/incoming/famos",
+        "local_exists": false,
+        "local_path": "D:\\datasets\\face_retopology\\incoming\\famos"
+      },
+      {
+        "name": "d3dfacs",
+        "priority": "primary",
+        "access": "license-gated",
+        "url": "https://flame.is.tue.mpg.de/",
+        "role": "FLAME/D3DFACS registered 4D face scans; strongest direct supervision target",
+        "local_hint": "D:/datasets/D3DFACS_FLAME_registrations",
+        "local_exists": false,
+        "local_path": "D:\\datasets\\D3DFACS_FLAME_registrations"
+      },
+      {
+        "name": "hifi3dface",
+        "priority": "secondary",
+        "access": "public code, large externally hosted resources",
+        "url": "https://github.com/linchaobao/hifi3dface",
+        "role": "high-detail source geometry that should be wrapped into FLAME-style supervision",
+        "local_hint": "D:/datasets/HiFi3DFace",
+        "local_exists": false,
+        "local_path": "D:\\datasets\\HiFi3DFace"
+      },
+      {
+        "name": "generic",
+        "priority": "utility",
+        "access": "local folder",
+        "url": "",
+        "role": "any local OBJ/PLY folder treated as source geometry",
+        "local_hint": "D:/datasets/generic_face_meshes",
+        "local_exists": false,
+        "local_path": "D:\\datasets\\generic_face_meshes"
+      }
+    ],
+    "notes": [
+      "No restricted dataset is auto-downloaded.",
+      "FaMoS and D3DFACS/FLAME registrations require license approval before local scanning.",
+      "HiFi3DFace public code/resources can be placed locally and scanned as source geometry."
+    ]
+  },
+  "template": {
+    "available": true,
+    "official_flame": false,
+    "source_path": null,
+    "vertex_count": 4161,
+    "face_count": 8064,
+    "warnings": []
+  },
+  "config": {
+    "quality": "balanced",
+    "strict_flame": false,
+    "save_ablation": false,
+    "template_path": null,
+    "semantic_map_path": null,
+    "landmark_map_path": null,
+    "landmark": {
+      "detector": "auto",
+      "min_face_size": 64,
+      "prefer_3d": true,
+      "use_mediapipe": true,
+      "use_insightface": true,
+      "use_mica_deca_imports": true
+    },
+    "semantic_icp": {
+      "quality": "balanced",
+      "use_semantics": true,
+      "visibility_weighting": true,
+      "bidirectional_check": true,
+      "point_to_plane_ratio": 0.55,
+      "min_acceptance_ratio": 0.12,
+      "outlier_percentile": 98.0,
+      "feature_anchor_weight": 1.0,
+      "arap_weight": 0.08,
+      "pca_weight": 0.03,
+      "pca_prior_path": null,
+      "schedule": []
+    },
+    "texture": {
+      "texture_size": 512,
+      "detail_strength": 0.45,
+      "max_detail_distance": 0.1,
+      "symmetric_photo_fill": true,
+      "save_detail_residual": true
+    },
+    "benchmark": {
+      "out": "outputs/benchmark",
+      "repeats": 1,
+      "seeds": [
+        7,
+        21,
+        42
+      ],
+      "include_photo": true,
+      "include_mesh": true
+    },
+    "deformnet_checkpoint": null
+  }
+}

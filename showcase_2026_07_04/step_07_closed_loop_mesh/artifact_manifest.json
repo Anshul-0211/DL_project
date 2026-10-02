@@ -1,0 +1,72 @@
+{
+  "method": "Visibility-Aware Face Semantic ICP Wrap",
+  "artifacts": {
+    "out_dir": "showcase_2026_07_04\\step_07_closed_loop_mesh",
+    "source_input": "showcase_2026_07_04\\step_07_closed_loop_mesh\\source_input.obj",
+    "initial_flame": "showcase_2026_07_04\\step_07_closed_loop_mesh\\initial_flame.obj",
+    "semantic_icp_wrapped": "showcase_2026_07_04\\step_07_closed_loop_mesh\\semantic_icp_wrapped.obj",
+    "result_obj": "showcase_2026_07_04\\step_07_closed_loop_mesh\\result_flame.obj",
+    "result_ply": "showcase_2026_07_04\\step_07_closed_loop_mesh\\result_flame.ply",
+    "texture": "showcase_2026_07_04\\step_07_closed_loop_mesh\\texture.png",
+    "metrics": "showcase_2026_07_04\\step_07_closed_loop_mesh\\metrics.json",
+    "viewer": "showcase_2026_07_04\\step_07_closed_loop_mesh\\viewer.html",
+    "manifest": "showcase_2026_07_04\\step_07_closed_loop_mesh\\artifact_manifest.json",
+    "semantic_overlay": "showcase_2026_07_04\\step_07_closed_loop_mesh\\semantic_overlay.png",
+    "detail_residual": "showcase_2026_07_04\\step_07_closed_loop_mesh\\detail_residual.npy",
+    "ablation_report": "showcase_2026_07_04\\step_07_closed_loop_mesh\\ablation_report.json"
+  },
+  "template": {
+    "official_flame": false,
+    "source_path": "data\\facescape_real_sample\\1_neutral_tu_template.obj",
+    "warnings": [
+      "Template is not the common FLAME 5023/9976 topology; topology will still be preserved."
+    ],
+    "topology": {
+      "vertex_count": 26317,
+      "face_count": 52261,
+      "face_checksum": 2061347210,
+      "first_faces": [
+        [
+          0,
+          6595,
+          6596
+        ],
+        [
+          6595,
+          1,
+          6597
+        ],
+        [
+          6596,
+          6597,
+          2
+        ],
+        [
+          6596,
+          6595,
+          6597
+        ],
+        [
+          0,
+          6596,
+          6598
+        ],
+        [
+          6596,
+          2,
+          6599
+        ],
+        [
+          6598,
+          6599,
+          3
+        ],
+        [
+          6598,
+          6596,
+          6599
+        ]
+      ]
+    }
+  }
+}

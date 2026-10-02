@@ -1,0 +1,94 @@
+{
+  "checkpoint": "outputs\\famos_flame_subset_train\\deformnet.pt",
+  "device": "cuda",
+  "pair_count": 1000,
+  "epochs": 20,
+  "history": [
+    {
+      "epoch": 1.0,
+      "loss": -1.42594969676435
+    },
+    {
+      "epoch": 2.0,
+      "loss": -1.716783166408539
+    },
+    {
+      "epoch": 3.0,
+      "loss": -1.8344511172771454
+    },
+    {
+      "epoch": 4.0,
+      "loss": -2.0106928129196167
+    },
+    {
+      "epoch": 5.0,
+      "loss": -2.049453760147095
+    },
+    {
+      "epoch": 6.0,
+      "loss": -2.1824799671173096
+    },
+    {
+      "epoch": 7.0,
+      "loss": -2.1939629201889037
+    },
+    {
+      "epoch": 8.0,
+      "loss": -2.251415416717529
+    },
+    {
+      "epoch": 9.0,
+      "loss": -2.262035605430603
+    },
+    {
+      "epoch": 10.0,
+      "loss": -2.330157720088959
+    },
+    {
+      "epoch": 11.0,
+      "loss": -2.478951406478882
+    },
+    {
+      "epoch": 12.0,
+      "loss": -2.5076260423660277
+    },
+    {
+      "epoch": 13.0,
+      "loss": -2.5794809474945066
+    },
+    {
+      "epoch": 14.0,
+      "loss": -2.6025501260757444
+    },
+    {
+      "epoch": 15.0,
+      "loss": -2.611951717376709
+    },
+    {
+      "epoch": 16.0,
+      "loss": -2.6891318655014036
+    },
+    {
+      "epoch": 17.0,
+      "loss": -2.7211929416656493
+    },
+    {
+      "epoch": 18.0,
+      "loss": -2.7089902610778807
+    },
+    {
+      "epoch": 19.0,
+      "loss": -2.736876543045044
+    },
+    {
+      "epoch": 20.0,
+      "loss": -2.769494554519653
+    }
+  ],
+  "runtime_sec": 304.38545790000353,
+  "sample_outputs": {
+    "prediction": "outputs\\famos_flame_subset_train\\sample_prediction.obj",
+    "target": "outputs\\famos_flame_subset_train\\sample_target.obj",
+    "viewer": "outputs\\famos_flame_subset_train\\sample_viewer.html"
+  }
+}

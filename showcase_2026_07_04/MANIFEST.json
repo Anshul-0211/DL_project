@@ -1,0 +1,72 @@
+{
+  "generated": "2026-07-04",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "steps": {
+    "01_doctor": {
+      "command": "python -m face_semantic_icp doctor",
+      "output": "step_01_dependency_check/doctor.json",
+      "scale": "full"
+    },
+    "02_dataset_scan": {
+      "command": "python -m face_semantic_icp dataset scan --dataset famos --root data/famos_flame_subset/registrations --out showcase_2026_07_04/step_02_dataset_scan",
+      "output": "step_02_dataset_scan/dataset_manifest.jsonl",
+      "scale": "full (1024 files scanned, 1017 valid)"
+    },
+    "03_pairs_generate": {
+      "command": "python -m face_semantic_icp pairs generate --manifest showcase_2026_07_04/step_02_dataset_scan/dataset_manifest.jsonl --out showcase_2026_07_04/step_03_pairs_generate --template data/famos_flame_subset/template_famos_flame.ply --limit 24 --seed 17",
+      "output": "step_03_pairs_generate/pairs_manifest.jsonl",
+      "scale": "proof-scale, 24 pairs (canonical 1000-pair set already exists at outputs/famos_flame_subset_pairs/)"
+    },
+    "04_build_prior": {
+      "command": "python -m face_semantic_icp build-prior --pairs showcase_2026_07_04/step_03_pairs_generate --out showcase_2026_07_04/step_04_build_prior/showcase_prior.npz --n-components 12",
+      "output": "step_04_build_prior/showcase_prior.npz (archived, see below)",
+      "scale": "proof-scale (built from the 24-pair set above)",
+      "headline_prior_cited_from": "outputs/famos_deformation_prior/ (97.79% variance, 12 modes, 1000 training targets)"
+    },
+    "05_train_v2": {
+      "command": "python -m face_semantic_icp train --pairs outputs/famos_flame_subset_pairs/pairs_manifest.jsonl --template data/famos_flame_subset/template_famos_flame.ply --model-version 2 --epochs 20 --batch-size 8 --hidden-dim 160 --max-pairs 1000 --device cuda --out showcase_2026_07_04/step_05_train_deformnet/v2",
+      "output": "step_05_train_deformnet/v2/train_metrics.json (checkpoint archived, see below)",
+      "scale": "full, 1000 pairs, 20 epochs, GPU"
+    },
+    "05_train_v3": {
+      "command": "python -m face_semantic_icp train --pairs outputs/famos_flame_subset_pairs/pairs_manifest.jsonl --template data/famos_flame_subset/template_famos_flame.ply --model-version 3 --epochs 30 --batch-size 8 --hidden-dim 160 --max-pairs 1000 --device cuda --out showcase_2026_07_04/step_05_train_deformnet/v3",
+      "output": "step_05_train_deformnet/v3/train_metrics.json (checkpoint archived, see below)",
+      "scale": "full, 1000 pairs, 30 epochs, GPU (GNN architecture)"
+    },
+    "06_eval_v2": {
+      "command": "python -m face_semantic_icp eval --checkpoint showcase_2026_07_04/step_05_train_deformnet/v2/deformnet.pt --pairs outputs/famos_flame_subset_pairs/pairs_manifest.jsonl --out showcase_2026_07_04/step_06_eval/v2 --baseline none --device cuda --limit 100",
+      "output": "step_06_eval/v2/eval_report.json",
+      "mean_learned_chamfer": 0.02199944204520886
+    },
+    "06_eval_v3": {
+      "command": "python -m face_semantic_icp eval --checkpoint showcase_2026_07_04/step_05_train_deformnet/v3/deformnet.pt --pairs outputs/famos_flame_subset_pairs/pairs_manifest.jsonl --out showcase_2026_07_04/step_06_eval/v3 --baseline none --device cuda --limit 100",
+      "output": "step_06_eval/v3/eval_report.json",
+      "mean_learned_chamfer": 0.01849253163225808
+    },
+    "07_closed_loop_hero_reused": {
+      "note": "Hero image reuses the existing verified proof case; see showcase_2026_07_04/README.md",
+      "source": "outputs/facescape_clean_topology_case/metrics.json"
+    },
+    "07_closed_loop_stress_test": {
+      "command": "python -m face_semantic_icp mesh data/facescape_real_sample/4_anger_decimated.obj --template data/facescape_real_sample/1_neutral_tu_template.obj --out showcase_2026_07_04/step_07_closed_loop_mesh --quality best --save-ablation",
+      "output": "step_07_closed_loop_mesh/metrics.json",
+      "scale": "full, fresh run, harder decimated real scan"
+    },
+    "08_prior_completion": {
+      "command": "python scripts/run_prior_guided_completion.py --prior outputs/famos_deformation_prior/famos_deformation_prior.npz --pairs outputs/famos_flame_subset_pairs/pairs_manifest.jsonl --out showcase_2026_07_04/step_08_prior_completion --pair-id pair_000091",
+      "output": "step_08_prior_completion/completion_metrics.json",
+      "scale": "full"
+    }
+  },
+  "renders": {
+    "step_04_prior_modes.png": "outputs/famos_deformation_prior/*.obj",
+    "step_05_training_curves.png": "step_05_train_deformnet/{v2,v3}/train_metrics.json",
+    "step_06_eval_v2.png": "step_06_eval/v2/*",
+    "step_06_eval_v3.png": "step_06_eval/v3/*",
+    "step_07_hero_retopology.png": "outputs/facescape_clean_topology_case/*",
+    "step_07b_stress_test.png": "step_07_closed_loop_mesh/* (supplementary, not in PPT)",
+    "step_08_completion.png": "step_08_prior_completion/*"
+  },
+  "note": "Raw meshes, checkpoints, and interactive viewer.html files not read by any script were archived outside the repo to keep it small. Metrics JSON, run logs, and renders were kept in place."
+}

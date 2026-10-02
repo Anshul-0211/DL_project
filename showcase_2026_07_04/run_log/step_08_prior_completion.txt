@@ -1,0 +1,77 @@
+{
+  "method": "Prior-Guided FLAME Completion",
+  "pair_id": "pair_000091",
+  "source_item_id": "famos_000091",
+  "observed_points": 1707,
+  "total_vertices": 5023,
+  "keep_ratio": 0.33983675094565,
+  "noise": 0.012,
+  "baseline_chamfer": 0.11996091466277155,
+  "completed_chamfer": 0.06911984823476072,
+  "baseline_vertex_rmse": 0.4673045662070871,
+  "completed_vertex_rmse": 0.37090756847827383,
+  "observed_to_baseline_distance": 0.13924844775532882,
+  "observed_to_completed_distance": 0.054863540149455076,
+  "normal_consistency_completed": 0.7037208172565408,
+  "runtime_sec": 0.019876599981216714,
+  "iterations": 8,
+  "ridge": 0.02,
+  "history": [
+    {
+      "iteration": 1.0,
+      "accepted_ratio": 0.9197422378441711,
+      "mean_nn_distance": 0.13924844775532882,
+      "median_nn_distance": 0.12757617015085934,
+      "coefficient_norm": 5.008034355552624
+    },
+    {
+      "iteration": 2.0,
+      "accepted_ratio": 0.9548916227299356,
+      "mean_nn_distance": 0.08189579721758476,
+      "median_nn_distance": 0.07166670054346078,
+      "coefficient_norm": 6.541436642119479
+    },
+    {
+      "iteration": 3.0,
+      "accepted_ratio": 0.9806678383128296,
+      "mean_nn_distance": 0.069053443477526,
+      "median_nn_distance": 0.05933111905585205,
+      "coefficient_norm": 7.53416782800061
+    },
+    {
+      "iteration": 4.0,
+      "accepted_ratio": 0.9876977152899824,
+      "mean_nn_distance": 0.06272333434526603,
+      "median_nn_distance": 0.053630887814695986,
+      "coefficient_norm": 8.2770449906475
+    },
+    {
+      "iteration": 5.0,
+      "accepted_ratio": 0.9900410076157,
+      "mean_nn_distance": 0.05931053325590913,
+      "median_nn_distance": 0.05001511848678043,
+      "coefficient_norm": 8.847877396905243
+    },
+    {
+      "iteration": 6.0,
+      "accepted_ratio": 0.9912126537785588,
+      "mean_nn_distance": 0.05739115657243466,
+      "median_nn_distance": 0.048465173538985606,
+      "coefficient_norm": 9.283847776476922
+    },
+    {
+      "iteration": 7.0,
+      "accepted_ratio": 0.9929701230228472,
+      "mean_nn_distance": 0.056173946303691165,
+      "median_nn_distance": 0.04692841175763009,
+      "coefficient_norm": 9.635607774587795
+    },
+    {
+      "iteration": 8.0,
+      "accepted_ratio": 0.994141769185706,
+      "mean_nn_distance": 0.05535463124336513,
+      "median_nn_distance": 0.04624011331242947,
+      "coefficient_norm": 9.865830155710556
+    }
+  ]
+}

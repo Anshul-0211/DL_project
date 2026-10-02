@@ -1,0 +1,57 @@
+{
+  "out": "showcase_2026_07_04\\step_03_pairs_generate",
+  "pairs_manifest": "showcase_2026_07_04\\step_03_pairs_generate\\pairs_manifest.jsonl",
+  "pair_count": 24,
+  "teacher": "wrap++",
+  "point_count": 1024,
+  "template_topology": {
+    "vertex_count": 5023,
+    "face_count": 9976,
+    "face_checksum": 75131976,
+    "first_faces": [
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        7,
+        5,
+        4
+      ],
+      [
+        12,
+        14,
+        13
+      ],
+      [
+        16,
+        18,
+        17
+      ],
+      [
+        31,
+        29,
+        28
+      ],
+      [
+        35,
+        33,
+        32
+      ],
+      [
+        36,
+        38,
+        37
+      ],
+      [
+        20,
+        22,
+        19
+      ]
+    ]
+  },
+  "subject_split": null
+}
+
+Pairs: showcase_2026_07_04\step_03_pairs_generate\pairs_manifest.jsonl
