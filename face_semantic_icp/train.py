@@ -281,6 +281,12 @@ def chamfer_torch(pred, target):
     return dist.min(dim=2).values.mean() + dist.min(dim=1).values.mean()
 
 
+def count_parameters(model) -> int:
+    """Number of trainable parameters — reported in train metrics for the
+    cross-model complexity comparison (PointNet v2 vs GNN v3)."""
+    return int(sum(p.numel() for p in model.parameters() if p.requires_grad))
+
+
 def train_deformnet(config: TrainConfig) -> dict[str, object]:
     torch, _, DataLoader, _ = _torch()
     out = Path(config.out)
@@ -367,6 +373,7 @@ def train_deformnet(config: TrainConfig) -> dict[str, object]:
         "device": str(device),
         "pair_count": len(records),
         "epochs": config.epochs,
+        "num_parameters": count_parameters(model),
         "history": history,
         "runtime_sec": perf_counter() - start,
         "sample_outputs": sample_paths,
