@@ -46,6 +46,8 @@ def _make_partial_observation(target: np.ndarray, keep_ratio: float, noise: floa
     side_dropout = ~((x > np.quantile(x, 0.55)) & (y < np.quantile(y, 0.60)))
     mask = front & central & no_lower_back & side_dropout
     candidates = np.flatnonzero(mask)
+    if len(candidates) == 0:
+        raise ValueError("Partial-observation mask selected no vertices; the target mesh may be degenerate or mis-oriented")
     keep = max(128, int(len(target) * keep_ratio))
     keep = min(keep, len(candidates))
     observed_idx = np.sort(rng.choice(candidates, size=keep, replace=False))
@@ -220,6 +222,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--distance-gate", type=float, default=0.18)
     parser.add_argument("--seed", type=int, default=11)
     args = parser.parse_args(argv)
+    if not 0.0 < args.keep_ratio <= 1.0:
+        parser.error(f"--keep-ratio must be in (0, 1], got {args.keep_ratio}")
+    if args.noise < 0.0:
+        parser.error(f"--noise must be non-negative, got {args.noise}")
+    if args.iterations < 1:
+        parser.error(f"--iterations must be at least 1, got {args.iterations}")
+    if args.ridge < 0.0:
+        parser.error(f"--ridge must be non-negative, got {args.ridge}")
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
