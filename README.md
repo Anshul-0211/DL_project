@@ -75,6 +75,9 @@ python -m face_semantic_icp eval --checkpoint outputs/train/deformnet.pt --pairs
 # Learn the PCA deformation prior + run prior-guided completion
 python scripts/learn_famos_deformation_prior.py
 python scripts/run_prior_guided_completion.py --prior outputs/famos_deformation_prior/famos_deformation_prior.npz --pairs PAIRS.jsonl --out outputs/completion
+
+# Plot per-mode / cumulative explained variance of the learned prior (reads prior_summary.json; no dataset needed)
+python scripts/plot_prior_explained_variance.py
 ```
 
 See **[DATASET_ACCESS.md](DATASET_ACCESS.md)** for dataset commands and the synthetic
