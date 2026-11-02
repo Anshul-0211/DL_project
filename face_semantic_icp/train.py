@@ -89,7 +89,8 @@ def build_gcn_adj(faces: np.ndarray, vertex_count: int):
     A = sp.coo_matrix((data, (rows, cols)), shape=(vertex_count, vertex_count)).tocsr()
     A.data = np.ones_like(A.data)
     deg = np.array(A.sum(axis=1)).flatten()
-    d_inv_sqrt = np.where(deg > 0, np.power(deg, -0.5, where=deg > 0), 0.0)
+    # out= zero-fills entries skipped by where=, avoiding numpy's uninitialised-memory warning.
+    d_inv_sqrt = np.power(deg, -0.5, out=np.zeros_like(deg), where=deg > 0)
     D = sp.diags(d_inv_sqrt)
     A_norm = (D @ A @ D).tocoo().astype(np.float32)
     idx = torch.tensor(np.vstack([A_norm.row, A_norm.col]), dtype=torch.long)
